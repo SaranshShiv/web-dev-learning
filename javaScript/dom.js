@@ -54,3 +54,68 @@ console.log(div.innerHTML);
 
 // div.innerText="Hello World";
 console.log(div.innerText);
+
+let h=document.querySelector("#heading2");
+h.append(", students studying in btech cs branch")
+
+let divbox= document.querySelectorAll(".box")
+console.log(divbox);
+
+divbox[1].style.backgroundColor="red";
+
+let i=0;
+divbox.forEach((el)=>{
+     el.append("  Hell0 this is box "+(i+1))
+     i++
+})
+
+let p1= document.querySelector("#p1")
+console.log(p1.innerText);
+console.dir(p1)
+
+console.log(p1.getAttribute("id"))
+
+//(id or class that is attribute, and the new name);
+p1.setAttribute("id","paragraph") 
+console.log(p1.getAttribute("id"))
+
+console.log(divbox[0].getAttribute("style"))
+console.log(divbox[0].style)
+
+divbox[0].style.backgroundColor="skyblue";
+
+document.body.style.backgroundColor="pink";
+
+bot.onclick= ()=>{
+    alert("haha nothing happens");
+    paragraph.scrollIntoView({behavior:"smooth"});
+}
+
+//to create an new element
+let newHeading = document.createElement("h2")
+let newbot= document.createElement("button")
+
+newHeading.innerHTML = "<i>This is created using JavaScript</i>"
+newbot.innerText = "dont Click"
+
+//to add and element; (append, prepend, before, after)
+document.body.append(newHeading);
+divbox[1].before(newbot)
+
+
+//to remove an element
+let para1= document.querySelector("#para1");
+para1.remove()
+
+//practice question 1;
+
+let newbutton= document.createElement("button");
+newbutton.innerText="click me";
+
+newbutton.style.backgroundColor="red"
+newbutton.style.color="white"
+
+document.body.prepend(newbutton)
+
+let paranew= document.querySelector(".contentpara");
+paranew.classList.add("newclass")
