@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(193, 189, 189);
+    text-align: center;
+
+}
+
+#Rps{
+    background-color: black;
+    color: white;
+    height: 100px;
+    line-height: 100px;
+}
